@@ -1,0 +1,182 @@
+.carousel-img {
+  height: 91vh;
+  object-fit: cover;
+}
+
+/* Responsive height for mobile devices */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 60vh;
+  }
+
+  .carousel-caption-custom h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption-custom p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption-custom button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+/* Caption background for better readability */
+.carousel-caption-custom {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.2rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+
+.hero-section {
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 70vh;
+  }
+
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-subtitle {
+    width: 90% !important;
+    font-size: 1rem !important;
+  }
+
+  .hero-section button {
+    font-size: 1rem !important;
+    padding: 8px 20px !important;
+  }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem !important;
+  }
+  .hero-subtitle {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Section Background */
+.featured-courses-section {
+  background: linear-gradient(to right, #30b4e2, #ffffff);
+  min-height: 100vh;
+}
+
+/* Card Hover Effects */
+.course-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.course-img {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Enroll Button */
+.enroll-btn {
+  background-color: #30b4e2 !important;
+  border: none !important;
+  border-radius: 25px !important;
+  transition: background-color 0.3s ease;
+}
+.enroll-btn:hover {
+  background-color: #1e9ec7 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .featured-courses-section {
+    min-height: auto;
+    padding: 3rem 1rem;
+  }
+  .course-img {
+    height: 200px;
+  }
+  .enroll-btn {
+    font-size: 0.95rem;
+    padding: 8px 20px;
+  }
+  .featured-courses-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
+.services-section {
+  background: #f8f9fa;
+}
+
+/* Card + Overlay setup */
+.service-card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.service-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+.service-card .position-relative {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover Zoom Background */
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .service-card {
+    padding: 2rem 1.2rem;
+  }
+
+  .service-card i {
+    font-size: 2rem !important;
+  }
+
+  .service-card h5 {
+    font-size: 1.25rem !important;
+  }
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+.blog-card:hover .position-absolute {
+  opacity: 1 !important;
+}
